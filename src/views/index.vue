@@ -1,30 +1,34 @@
 <template>
     <yd-layout>
-        <yd-navbar slot="navbar" :title="NavBar" bgcolor="#e50e09" color="#fff">
+        <!-- <yd-navbar slot="navbar" :title="NavBar" bgcolor="#e50e09" color="#fff">
             <router-link to="#" slot="left">
                 <yd-navbar-back-icon color="#fff"></yd-navbar-back-icon>
             </router-link>
-        </yd-navbar>
+        </yd-navbar> -->
         <div v-show="activeTabbar === 'index'">
+            <div></div>
             <yd-slider autoplay="3000">
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
-                        <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+                        <img :src="carousel[0]">
                     </a>
                 </yd-slider-item>
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
-                        <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+                        <img :src="carousel[1]">
                     </a>
                 </yd-slider-item>
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
-                        <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+                        <img :src="carousel[2]">
+                    </a>
+                </yd-slider-item>
+                <yd-slider-item>
+                    <a href="http://www.ydcss.com">
+                        <img :src="carousel[3]">
                     </a>
                 </yd-slider-item>
             </yd-slider>
-
-
         </div>
         <!-- <div v-show="activeTabbar === 'shopcart'">
             <div>购物车shopcart</div>
@@ -126,7 +130,9 @@
                         marketprice: 56.23,
                         productprice: 89.36
                     }
-                ]
+                ],
+
+                carousel: [require('@/assets/coursel/coursel-01.jpg'),require('@/assets/coursel/coursel-02.jpg'),require('@/assets/coursel/coursel-03.jpg'),require('@/assets/coursel/coursel-04.jpg')]
 
             }
         },

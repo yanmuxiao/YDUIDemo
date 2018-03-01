@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-import Index from '@/components/index.vue';
+import Guide from '@/views/guide.vue';
+import Index from '@/views/index.vue';
 
 Vue.use(Router)
 
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 export default new Router({
   routes: [
-    {   path: '/', name: 'index', component: Index},
+    {   path: '/', name: 'guide', component: Guide},
+    {   path: '/index', name: 'index', component: Index},
   ]
 })
