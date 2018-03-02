@@ -9,7 +9,6 @@ Vue.config.productionTip = false
 
 import 'vue-ydui/dist/ydui.base.css';
 import {Layout} from 'vue-ydui/dist/lib.rem/layout';
-import {GridsGroup, GridsItem} from 'vue-ydui/dist/lib.rem/grids';
 Vue.component(Layout.name, Layout);
 Vue.use(Layout)
 
@@ -61,6 +60,34 @@ Vue.component(CellGroup.name, CellGroup);
 Vue.component(CellItem.name, CellItem);
 Vue.use(CellGroup)
 Vue.use(CellItem)
+
+
+
+
+import {Search} from 'vue-ydui/dist/lib.rem/search';
+Vue.component(Search.name, Search);
+Vue.use(Search)
+
+import { GridsGroup, GridsItem } from 'vue-ydui/dist/lib.rem/grids';
+Vue.component(GridsGroup.name, GridsGroup);
+Vue.component(GridsItem.name, GridsItem);
+Vue.use(GridsGroup)
+Vue.use(GridsItem)
+
+
+import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
+Vue.component(InfiniteScroll.name, InfiniteScroll);
+Vue.use(InfiniteScroll)
+
+import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
+Vue.component(BackTop.name, BackTop);
+Vue.use(BackTop)
+
+
+import {Badge} from 'vue-ydui/dist/lib.rem/badge';
+Vue.component(Badge.name, Badge);
+Vue.use(Badge)
+
 
 /* eslint-disable no-new */
 new Vue({
