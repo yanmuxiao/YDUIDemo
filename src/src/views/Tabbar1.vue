@@ -21,6 +21,7 @@
                 <span slot="text">{{gridsImgItem.title}}</span>
             </yd-grids-item>
         </yd-grids-group>
+        
 
         <yd-infinitescroll :callback="loadMoreList" ref="lsdemo">
 	        <yd-list theme="3" slot="list">

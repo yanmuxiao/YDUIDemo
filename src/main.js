@@ -6,6 +6,8 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import 'vue-ydui/dist/ydui.base.css';
+
 
 import {Button, ButtonGroup} from 'vue-ydui/dist/lib.rem/button';
 Vue.component(Button.name, Button);
@@ -60,7 +62,7 @@ Vue.use(TabBarItem)
 
 
 
-import 'vue-ydui/dist/ydui.base.css';
+
 import {Layout} from 'vue-ydui/dist/lib.rem/layout';
 Vue.component(Layout.name, Layout);
 Vue.use(Layout)

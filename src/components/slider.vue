@@ -6,16 +6,19 @@
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
                         <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+                        <!-- <img :src="carousel[0]"> -->
                     </a>
                 </yd-slider-item>
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
                         <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+                        <!-- <img :src="carousel[1]"> -->
                     </a>
                 </yd-slider-item>
                 <yd-slider-item>
                     <a href="http://www.ydcss.com">
                         <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+                        <!-- <img :src="carousel[2]"> -->
                     </a>
                 </yd-slider-item>
             </yd-slider>
@@ -239,3 +242,15 @@
         </div>
     </yd-layout>
 </template>
+
+<script type="text/javascript">
+      
+      export default {
+            data() {
+                  return {
+                        carousel: [require('@/assets/coursel/coursel-01.jpg'),require('@/assets/coursel/coursel-02.jpg'),require('@/assets/coursel/coursel-03.jpg'),require('@/assets/coursel/coursel-04.jpg')],
+                  }
+            }
+      } 
+
+</script>
